@@ -19,6 +19,7 @@ format: revealjs
 ## ggmap
 
 ```{r ggmap-data}
+#| echo: true
 #| eval: false
 register_google(key = google_key)
 geocode(new_address)
@@ -58,16 +59,37 @@ function(mark=0) {
 
 ```
 
-## plumber {background-image="img/caseros-api.png"}
+## plumber 
+
+![](img/caseros-api.png)
 
 
 ## papelitos
 
 [papelitos.leonardohansa.com]()
 
+## cómo puedes jugar
 
-## 
+![](img/papelitos-instrus1.png){height="650"}
+![](img/papelitos-instrus2.png){height="650"}
+![](img/papelitos-instrus3.png){height="650"}
 
+## cómo puedes jugar
+
+![](img/papelitos-input0.png){height="650"}
+![](img/papelitos-input1.png){height="650"}
+![](img/papelitos-input2.png){height="650"}
+
+## pues al lío
+
+![](img/papelitos-input3.png){.absolute left=150 height="650"}
+![](img/papelitos-input4.png){.absolute right=150 height="650"}
+
+
+
+
+
+------
 
 ::: {style="text-align: center; color: #800080; font-size: 200%; padding-top: 100px"}
 leonardohansa.com

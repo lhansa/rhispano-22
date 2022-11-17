@@ -416,7 +416,8 @@ Leonardo Hansa
 <section id="ggmap" class="slide level2">
 <h2>ggmap</h2>
 <div class="cell">
-
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">register_google</span>(<span class="at">key =</span> google_key)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">geocode</span>(new_address)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="ggmap-1" class="slide level2" data-background-image="img/caseros-input.png">
@@ -491,29 +492,42 @@ Leonardo Hansa
 <section id="plumber" class="slide level2">
 <h2>plumber</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># plumber.R</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#* Return data frame with info</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#* @param mark Lower bound mark</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#* @serializer unboxedJSON</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#* @get /echo</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="cf">function</span>(<span class="at">mark=</span><span class="dv">0</span>) {</span>
-<span id="cb2-8"><a href="#cb2-8"></a>  jsonlite<span class="sc">::</span><span class="fu">toJSON</span>(</span>
-<span id="cb2-9"><a href="#cb2-9"></a>    caseros<span class="sc">::</span><span class="fu">get_reviews_over</span>(mark),</span>
-<span id="cb2-10"><a href="#cb2-10"></a>    <span class="at">auto_unbox =</span><span class="cn">TRUE</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a>  )</span>
-<span id="cb2-12"><a href="#cb2-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># plumber.R</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#* Return data frame with info</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co">#* @param mark Lower bound mark</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co">#* @serializer unboxedJSON</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#* @get /echo</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="cf">function</span>(<span class="at">mark=</span><span class="dv">0</span>) {</span>
+<span id="cb3-8"><a href="#cb3-8"></a>  jsonlite<span class="sc">::</span><span class="fu">toJSON</span>(</span>
+<span id="cb3-9"><a href="#cb3-9"></a>    caseros<span class="sc">::</span><span class="fu">get_reviews_over</span>(mark),</span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="at">auto_unbox =</span><span class="cn">TRUE</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>  )</span>
+<span id="cb3-12"><a href="#cb3-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="plumber-1" class="slide level2" data-background-image="img/caseros-api.png">
+<section id="plumber-1" class="slide level2">
 <h2>plumber</h2>
-</section>
+
+<img data-src="img/caseros-api.png" class="r-stretch"></section>
 <section id="papelitos" class="slide level2">
 <h2>papelitos</h2>
 <p><a href="">papelitos.leonardohansa.com</a></p>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="cómo-puedes-jugar" class="slide level2">
+<h2>cómo puedes jugar</h2>
+<p><img data-src="img/papelitos-instrus1.png" height="650"> <img data-src="img/papelitos-instrus2.png" height="650"> <img data-src="img/papelitos-instrus3.png" height="650"></p>
+</section>
+<section id="cómo-puedes-jugar-1" class="slide level2">
+<h2>cómo puedes jugar</h2>
+<p><img data-src="img/papelitos-input0.png" height="650"> <img data-src="img/papelitos-input1.png" height="650"> <img data-src="img/papelitos-input2.png" height="650"></p>
+</section>
+<section id="pues-al-lío" class="slide level2">
+<h2>pues al lío</h2>
+<p><img data-src="img/papelitos-input3.png" class="absolute" style="left: 150px; height: 650px; "> <img data-src="img/papelitos-input4.png" class="absolute" style="right: 150px; height: 650px; "></p>
+</section>
+<section class="slide level2">
+
 <div style="text-align: center; color: #800080; font-size: 200%; padding-top: 100px">
 <p>leonardohansa.com</p>
 </div>

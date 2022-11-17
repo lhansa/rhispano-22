@@ -25,7 +25,7 @@
     "href": "index.html#ggmap",
     "title": "Córdoba 2022",
     "section": "ggmap",
-    "text": "ggmap"
+    "text": "ggmap\n\nregister_google(key = google_key)\ngeocode(new_address)"
   },
   {
     "objectID": "index.html#ggmap-1",
@@ -77,11 +77,25 @@
     "text": "papelitos\npapelitos.leonardohansa.com"
   },
   {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
+    "objectID": "index.html#cómo-puedes-jugar",
+    "href": "index.html#cómo-puedes-jugar",
     "title": "Córdoba 2022",
-    "section": "",
-    "text": "leonardohansa.com"
+    "section": "cómo puedes jugar",
+    "text": "cómo puedes jugar"
+  },
+  {
+    "objectID": "index.html#cómo-puedes-jugar-1",
+    "href": "index.html#cómo-puedes-jugar-1",
+    "title": "Córdoba 2022",
+    "section": "cómo puedes jugar",
+    "text": "cómo puedes jugar"
+  },
+  {
+    "objectID": "index.html#pues-al-lío",
+    "href": "index.html#pues-al-lío",
+    "title": "Córdoba 2022",
+    "section": "pues al lío",
+    "text": "pues al lío"
   },
   {
     "objectID": "about.html",
