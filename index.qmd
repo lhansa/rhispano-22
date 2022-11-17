@@ -1,0 +1,78 @@
+---
+title: "Córdoba 2022"
+author: "Leonardo Hansa"
+format: revealjs
+---
+
+## Córdoba 2022
+
+1. Un shiny para reviews de casas de alquiler
+2. Un shiny para un juego por equipos
+
+## caseros
+
+[caseros.leonardohansa.com]()
+
+
+## leaflet {background-image="img/caseros-general.png"}
+
+## ggmap
+
+```{r ggmap-data}
+#| eval: false
+register_google(key = google_key)
+geocode(new_address)
+```
+
+## ggmap {background-image="img/caseros-input.png"}
+
+## ggmap {background-image="img/caseros-new-marker.png"}
+
+## leaflet {background-image="img/caseros-ejemplo-review.png"}
+
+
+## golem
+
+```{r golem}
+#| echo: false
+fs::dir_tree("~/Projects/caseros")
+```
+## plumber
+
+```{r plumber}
+#| echo: true
+#| eval: false
+
+# plumber.R
+
+#* Return data frame with info
+#* @param mark Lower bound mark
+#* @serializer unboxedJSON
+#* @get /echo
+function(mark=0) {
+  jsonlite::toJSON(
+    caseros::get_reviews_over(mark),
+    auto_unbox =TRUE
+  )
+}
+
+```
+
+## plumber {background-image="img/caseros-api.png"}
+
+
+## papelitos
+
+[papelitos.leonardohansa.com]()
+
+
+## 
+
+
+::: {style="text-align: center; color: #800080; font-size: 200%; padding-top: 100px"}
+leonardohansa.com
+:::
+
+
+
+
