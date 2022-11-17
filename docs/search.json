@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html#córdoba-2022",
+    "href": "index.html#córdoba-2022",
+    "title": "Córdoba 2022",
+    "section": "Córdoba 2022",
+    "text": "Córdoba 2022\n\nUn shiny para reviews de casas de alquiler\nUn shiny para un juego por equipos"
+  },
+  {
+    "objectID": "index.html#caseros",
+    "href": "index.html#caseros",
+    "title": "Córdoba 2022",
+    "section": "caseros",
+    "text": "caseros\ncaseros.leonardohansa.com"
+  },
+  {
+    "objectID": "index.html#leaflet",
+    "href": "index.html#leaflet",
+    "title": "Córdoba 2022",
+    "section": "leaflet",
+    "text": "leaflet"
+  },
+  {
+    "objectID": "index.html#ggmap",
+    "href": "index.html#ggmap",
+    "title": "Córdoba 2022",
+    "section": "ggmap",
+    "text": "ggmap"
+  },
+  {
+    "objectID": "index.html#ggmap-1",
+    "href": "index.html#ggmap-1",
+    "title": "Córdoba 2022",
+    "section": "ggmap",
+    "text": "ggmap"
+  },
+  {
+    "objectID": "index.html#ggmap-2",
+    "href": "index.html#ggmap-2",
+    "title": "Córdoba 2022",
+    "section": "ggmap",
+    "text": "ggmap"
+  },
+  {
+    "objectID": "index.html#leaflet-1",
+    "href": "index.html#leaflet-1",
+    "title": "Córdoba 2022",
+    "section": "leaflet",
+    "text": "leaflet"
+  },
+  {
+    "objectID": "index.html#golem",
+    "href": "index.html#golem",
+    "title": "Córdoba 2022",
+    "section": "golem",
+    "text": "golem\n\n\n~/Projects/caseros\n├── DESCRIPTION\n├── LICENSE\n├── LICENSE.md\n├── NAMESPACE\n├── R\n│   ├── _disable_autoload.R\n│   ├── app_config.R\n│   ├── app_server.R\n│   ├── app_ui.R\n│   ├── get_reviews_over.R\n│   ├── mod_input.R\n│   ├── mod_show_map.R\n│   ├── mod_show_marker.R\n│   ├── run_app.R\n│   └── update_with_new_address.R\n├── README.Rmd\n├── README.md\n├── app.R\n├── caseros.Rproj\n├── dev\n│   ├── 01_start.R\n│   ├── 02_dev.R\n│   ├── 03_deploy.R\n│   └── run_dev.R\n├── inst\n│   ├── WORDLIST\n│   ├── app\n│   │   └── www\n│   │       └── favicon.ico\n│   ├── extdata\n│   │   └── locs.rds\n│   ├── golem-config.yml\n│   ├── plumber\n│   │   └── api1\n│   │       └── plumber.R\n│   └── update-locs-manually.R\n├── man\n│   ├── get_reviews_over.Rd\n│   ├── inputReviewUI.Rd\n│   ├── run_app.Rd\n│   ├── showMapUI.Rd\n│   ├── showMarkerUI.Rd\n│   └── update_with_new_address.Rd\n├── rsconnect\n│   └── shinyapps.io\n│       └── lhansa\n│           └── caseros.dcf\n└── tests\n    ├── spelling.R\n    ├── testthat\n    │   └── test-golem-recommended.R\n    └── testthat.R"
+  },
+  {
+    "objectID": "index.html#plumber",
+    "href": "index.html#plumber",
+    "title": "Córdoba 2022",
+    "section": "plumber",
+    "text": "plumber\n\n# plumber.R\n\n#* Return data frame with info\n#* @param mark Lower bound mark\n#* @serializer unboxedJSON\n#* @get /echo\nfunction(mark=0) {\n  jsonlite::toJSON(\n    caseros::get_reviews_over(mark),\n    auto_unbox =TRUE\n  )\n}"
+  },
+  {
+    "objectID": "index.html#plumber-1",
+    "href": "index.html#plumber-1",
+    "title": "Córdoba 2022",
+    "section": "plumber",
+    "text": "plumber"
+  },
+  {
+    "objectID": "index.html#papelitos",
+    "href": "index.html#papelitos",
+    "title": "Córdoba 2022",
+    "section": "papelitos",
+    "text": "papelitos\npapelitos.leonardohansa.com"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Córdoba 2022",
+    "section": "",
+    "text": "leonardohansa.com"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
