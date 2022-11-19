@@ -1,17 +1,18 @@
 ---
-title: "Córdoba 2022"
+title: "2 shiny apps, para el ocio y el negocio"
+subtitle: "R Hispano - Córdoba 2022"
 author: "Leonardo Hansa"
 format: revealjs
 ---
 
-## Córdoba 2022
+## 2 shiny apps, para el ocio y el negocio
 
-1. Un shiny para reviews de casas de alquiler
-2. Un shiny para un juego por equipos
+1. Un shiny como prototipo de app para reviews de casas de alquiler
+2. Un shiny para un juego por equipos desde el móvil
 
 ## caseros
 
-[caseros.leonardohansa.com]()
+[https://lhansa.shinyapps.io/caseros](https://lhansa.shinyapps.io/caseros)
 
 
 ## leaflet {background-image="img/caseros-general.png"}
@@ -66,7 +67,7 @@ function(mark=0) {
 
 ## papelitos
 
-[papelitos.leonardohansa.com]()
+[https://lhansa.shinyapps.io/papelitos/](https://lhansa.shinyapps.io/papelitos)
 
 ## cómo puedes jugar
 

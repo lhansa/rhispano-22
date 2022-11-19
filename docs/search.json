@@ -9,91 +9,91 @@
   {
     "objectID": "index.html#caseros",
     "href": "index.html#caseros",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "caseros",
-    "text": "caseros\ncaseros.leonardohansa.com"
+    "text": "caseros\nhttps://lhansa.shinyapps.io/caseros"
   },
   {
     "objectID": "index.html#leaflet",
     "href": "index.html#leaflet",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "leaflet",
     "text": "leaflet"
   },
   {
     "objectID": "index.html#ggmap",
     "href": "index.html#ggmap",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "ggmap",
     "text": "ggmap\n\nregister_google(key = google_key)\ngeocode(new_address)"
   },
   {
     "objectID": "index.html#ggmap-1",
     "href": "index.html#ggmap-1",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "ggmap",
     "text": "ggmap"
   },
   {
     "objectID": "index.html#ggmap-2",
     "href": "index.html#ggmap-2",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "ggmap",
     "text": "ggmap"
   },
   {
     "objectID": "index.html#leaflet-1",
     "href": "index.html#leaflet-1",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "leaflet",
     "text": "leaflet"
   },
   {
     "objectID": "index.html#golem",
     "href": "index.html#golem",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "golem",
-    "text": "golem\n\n\n~/Projects/caseros\n├── DESCRIPTION\n├── LICENSE\n├── LICENSE.md\n├── NAMESPACE\n├── R\n│   ├── _disable_autoload.R\n│   ├── app_config.R\n│   ├── app_server.R\n│   ├── app_ui.R\n│   ├── get_reviews_over.R\n│   ├── mod_input.R\n│   ├── mod_show_map.R\n│   ├── mod_show_marker.R\n│   ├── run_app.R\n│   └── update_with_new_address.R\n├── README.Rmd\n├── README.md\n├── app.R\n├── caseros.Rproj\n├── dev\n│   ├── 01_start.R\n│   ├── 02_dev.R\n│   ├── 03_deploy.R\n│   └── run_dev.R\n├── inst\n│   ├── WORDLIST\n│   ├── app\n│   │   └── www\n│   │       └── favicon.ico\n│   ├── extdata\n│   │   └── locs.rds\n│   ├── golem-config.yml\n│   ├── plumber\n│   │   └── api1\n│   │       └── plumber.R\n│   └── update-locs-manually.R\n├── man\n│   ├── get_reviews_over.Rd\n│   ├── inputReviewUI.Rd\n│   ├── run_app.Rd\n│   ├── showMapUI.Rd\n│   ├── showMarkerUI.Rd\n│   └── update_with_new_address.Rd\n├── rsconnect\n│   └── shinyapps.io\n│       └── lhansa\n│           └── caseros.dcf\n└── tests\n    ├── spelling.R\n    ├── testthat\n    │   └── test-golem-recommended.R\n    └── testthat.R"
+    "text": "golem\n\n\n~/Projects/caseros\n├── DESCRIPTION\n├── LICENSE\n├── LICENSE.md\n├── NAMESPACE\n├── R\n│   ├── _disable_autoload.R\n│   ├── app_config.R\n│   ├── app_server.R\n│   ├── app_ui.R\n│   ├── get_reviews_over.R\n│   ├── mod_input.R\n│   ├── mod_show_map.R\n│   ├── mod_show_marker.R\n│   ├── run_app.R\n│   └── update_with_new_address.R\n├── README.Rmd\n├── README.md\n├── app.R\n├── caseros.Rproj\n├── dev\n│   ├── 01_start.R\n│   ├── 02_dev.R\n│   ├── 03_deploy.R\n│   └── run_dev.R\n├── inst\n│   ├── WORDLIST\n│   ├── app\n│   │   └── www\n│   │       └── favicon.ico\n│   ├── cruce-poligonos.R\n│   ├── extdata\n│   │   └── locs.rds\n│   ├── golem-config.yml\n│   ├── plumber\n│   │   └── api1\n│   │       └── plumber.R\n│   └── update-locs-manually.R\n├── man\n│   ├── get_reviews_over.Rd\n│   ├── inputReviewUI.Rd\n│   ├── run_app.Rd\n│   ├── showMapUI.Rd\n│   ├── showMarkerUI.Rd\n│   └── update_with_new_address.Rd\n├── rsconnect\n│   └── shinyapps.io\n│       └── lhansa\n│           └── caseros.dcf\n└── tests\n    ├── spelling.R\n    ├── testthat\n    │   └── test-golem-recommended.R\n    └── testthat.R"
   },
   {
     "objectID": "index.html#plumber",
     "href": "index.html#plumber",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "plumber",
     "text": "plumber\n\n# plumber.R\n\n#* Return data frame with info\n#* @param mark Lower bound mark\n#* @serializer unboxedJSON\n#* @get /echo\nfunction(mark=0) {\n  jsonlite::toJSON(\n    caseros::get_reviews_over(mark),\n    auto_unbox =TRUE\n  )\n}"
   },
   {
     "objectID": "index.html#plumber-1",
     "href": "index.html#plumber-1",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "plumber",
     "text": "plumber"
   },
   {
     "objectID": "index.html#papelitos",
     "href": "index.html#papelitos",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "papelitos",
-    "text": "papelitos\npapelitos.leonardohansa.com"
+    "text": "papelitos\nhttps://lhansa.shinyapps.io/papelitos/"
   },
   {
     "objectID": "index.html#cómo-puedes-jugar",
     "href": "index.html#cómo-puedes-jugar",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "cómo puedes jugar",
     "text": "cómo puedes jugar"
   },
   {
     "objectID": "index.html#cómo-puedes-jugar-1",
     "href": "index.html#cómo-puedes-jugar-1",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "cómo puedes jugar",
     "text": "cómo puedes jugar"
   },
   {
     "objectID": "index.html#pues-al-lío",
     "href": "index.html#pues-al-lío",
-    "title": "Córdoba 2022",
+    "title": "2 shiny apps, para el ocio y el negocio",
     "section": "pues al lío",
     "text": "pues al lío"
   },
@@ -103,5 +103,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#shiny-apps-para-el-ocio-y-el-negocio",
+    "href": "index.html#shiny-apps-para-el-ocio-y-el-negocio",
+    "title": "2 shiny apps, para el ocio y el negocio",
+    "section": "2 shiny apps, para el ocio y el negocio",
+    "text": "2 shiny apps, para el ocio y el negocio\n\nUn shiny como prototipo de app para reviews de casas de alquiler\nUn shiny para un juego por equipos desde el móvil"
   }
 ]
