@@ -2,7 +2,10 @@
 title: "2 shiny apps, para el ocio y el negocio"
 subtitle: "R Hispano - Córdoba 2022"
 author: "Leonardo Hansa"
-format: revealjs
+format: 
+  revealjs:
+    width: 960 
+    height: 700 
 ---
 
 ## 2 shiny apps, para el ocio y el negocio
@@ -74,30 +77,24 @@ function(mark=0) {
 
 ## cómo puedes jugar
 
-![](img/papelitos-instrus1.png){height="650"}
-![](img/papelitos-instrus2.png){height="650"}
-![](img/papelitos-instrus3.png){height="650"}
+![](img/papelitos-instrus1.png){.absolute left=50 height="500"}
+![](img/papelitos-instrus2.png){.absolute left=350 height="500"}
+![](img/papelitos-instrus3.png){.absolute right=50 height="500"}
 
 ## cómo puedes jugar
 
-![](img/papelitos-input0.png){height="650"}
-![](img/papelitos-input1.png){height="650"}
-![](img/papelitos-input2.png){height="650"}
+![](img/papelitos-input0.png){.absolute left=50 height="500"}
+![](img/papelitos-input1.png){.absolute left=350 height="500"}
+![](img/papelitos-input2.png){.absolute right=50 height="500"}
 
 ## pues al lío
 
-![](img/papelitos-input3.png){.absolute left=150 height="650"}
-![](img/papelitos-input4.png){.absolute right=150 height="650"}
+![](img/papelitos-input3.png){.absolute left=150 height="500"}
+![](img/papelitos-input4.png){.absolute right=150 height="500"}
 
 
 
 
-
-------
-
-::: {style="text-align: center; color: #800080; font-size: 200%; padding-top: 100px"}
-leonardohansa.com
-:::
 
 ---------
 ::: {.r-fit-text style="color: #800080; padding-top: 200px;"}
