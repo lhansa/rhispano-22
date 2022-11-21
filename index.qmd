@@ -14,6 +14,9 @@ format: revealjs
 
 [https://lhansa.shinyapps.io/caseros](https://lhansa.shinyapps.io/caseros)
 
+::: {.notes}
+Prototipo. Pruebas de Shiny - Aplicar luego en otros proyectos.
+:::
 
 ## leaflet {background-image="img/caseros-general.png"}
 
@@ -96,6 +99,10 @@ function(mark=0) {
 leonardohansa.com
 :::
 
+---------
+::: {.r-fit-text style="color: #800080; padding-top: 200px;"}
+leonardohansa.com
+:::
 
 
 
