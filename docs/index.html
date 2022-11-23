@@ -437,7 +437,7 @@ Leonardo Hansa
           display:block!important;
       }</style></aside>
 </section>
-<section id="leaflet" class="slide level2" data-background-image="img/caseros-general.png">
+<section id="leaflet" class="slide level2" data-background-image="img/caseros-general.png" data-background-size="90%">
 <h2>leaflet</h2>
 <aside class="notes">
 <p>Lo primero que te encuentras al abrir el Shiny es un mapa de leaflet. Leaflet me gusta un montón porque me permite hacer mapas interactivos muy chulos sin tener ni idea de javascript. Este mapa muestra las direcciones en las que hay valoraciones ya hechas. Un comentario: estos no están anonimizados ni simulados, sino inventados. Todo lo que veis aquí es mentira. Solo me interesa el funcionamiento: el prototipo aún no está operativo.</p>
@@ -473,7 +473,7 @@ Leonardo Hansa
           display:block!important;
       }</style></aside>
 </section>
-<section id="ggmap-1" class="slide level2" data-background-image="img/caseros-input.png">
+<section id="ggmap-1" class="slide level2" data-background-image="img/caseros-input.png" data-background-size="90%">
 <h2>ggmap</h2>
 <aside class="notes">
 <p>El usuario introduce la dirección de la casa, la valoración y un comentario. Y su API KEY. Y cuando hace click en añadir valoración…</p>
@@ -489,7 +489,7 @@ Leonardo Hansa
           display:block!important;
       }</style></aside>
 </section>
-<section id="ggmap-2" class="slide level2" data-background-image="img/caseros-new-marker.png">
+<section id="ggmap-2" class="slide level2" data-background-image="img/caseros-new-marker.png" data-background-size="90%">
 <h2>ggmap</h2>
 <aside class="notes">
 <p>Pues eso, se añade una valoración. Es decir, un punto nuevo en el mapa con la valoración del usuario. Esto por detrás, tras la llamada a ggmap, actualiza un fichero. El Shiny comprueba cada 2 segundos si ese fichero ha sufrido cambios, con reactiveFileReader. Si es así, lee el fichero y actualiza el mapa.</p>
@@ -505,7 +505,7 @@ Leonardo Hansa
           display:block!important;
       }</style></aside>
 </section>
-<section id="leaflet-1" class="slide level2" data-background-image="img/caseros-ejemplo-review.png">
+<section id="leaflet-1" class="slide level2" data-background-image="img/caseros-ejemplo-review.png" data-background-size="90%">
 <h2>leaflet</h2>
 <aside class="notes">
 <p>Para consultar información no hace falta iniciar sesión. Uno puede hacer click en un marcador y ve la info. Con leaflet puedes hacer click en estos marcadores y te sale un pop-up con la información que contiene. Pero yo quería tener control desde Shiny, porque así tenía más margen para mostrar la información de un punto. Lo bueno es que leaflet y shiny se entienden muy bien y puedes vincularlos de manera que Shiny sabe dónde está haciendo click el usuario dentro del mapa. Eso no solo es útil para mostrar la información del marcador con Shiny, sino que podría guardar un registro de clicks que hacen los usuarios.</p>
@@ -627,7 +627,20 @@ Leonardo Hansa
 </section>
 <section id="plumber-1" class="slide level2">
 <h2>plumber</h2>
-<p><img data-src="img/caseros-api.png"> ::: {.notes} La API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub. :::</p>
+
+<img data-src="img/caseros-api.png" class="r-stretch"><aside class="notes">
+<p>La API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="papelitos" class="slide level2">
 <h2>papelitos</h2>
@@ -649,14 +662,54 @@ Leonardo Hansa
 <section id="cómo-puedes-jugar" class="slide level2">
 <h2>cómo puedes jugar</h2>
 <p><img data-src="img/papelitos-instrus1.png" class="absolute" style="left: 50px; height: 500px; "> <img data-src="img/papelitos-instrus2.png" class="absolute" style="left: 350px; height: 500px; "> <img data-src="img/papelitos-instrus3.png" class="absolute" style="right: 50px; height: 500px; "></p>
+<aside class="notes">
+<p>Si entras con el móvil, verás una caja con instrucciones. Ahí está el detalle del juego, que ahora no me da tiempo a contar. Pero como ya he dicho, es el que mucha gente llama personajes. Se escriben nombres de personajes en papelitos, y luego hay que adivinar lo que pone en el papel por equipos, haciendo mimíca y cosas de esas.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="cómo-puedes-jugar-1" class="slide level2">
 <h2>cómo puedes jugar</h2>
-<p><img data-src="img/papelitos-input0.png" class="absolute" style="left: 50px; height: 500px; "> <img data-src="img/papelitos-input1.png" class="absolute" style="left: 350px; height: 500px; "> <img data-src="img/papelitos-input2.png" class="absolute" style="right: 50px; height: 500px; "></p>
+<p><img data-src="img/papelitos-input0.png" class="absolute" style="left: 50px; height: 500px; "></p>
+<p><img data-src="img/papelitos-input1.png" class="absolute" style="left: 350px; height: 500px; "> <img data-src="img/papelitos-input2.png" class="absolute" style="right: 50px; height: 500px; "></p>
+<aside class="notes">
+<p>Para jugar, cada jugador introduce el nombre de un personaje, o cualquier palabra de una temática acordada y pulsa en el botón. Esto va creando un vector con todos los nombres.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="pues-al-lío" class="slide level2">
 <h2>pues al lío</h2>
 <p><img data-src="img/papelitos-input3.png" class="absolute" style="left: 150px; height: 500px; "> <img data-src="img/papelitos-input4.png" class="absolute" style="right: 150px; height: 500px; "></p>
+<aside class="notes">
+<p>Durante la ronda, la persona a la que le toque explicar el papelito, va sacando nombres del vector, pulsando el botón de “sacar papelito”. Una cosa pendiente que me gustaría añadir, y no sé cómo hacer, es poner un temporizador, para no depender de otro móvil para hacer eso.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section class="slide level2">
 

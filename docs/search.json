@@ -67,7 +67,7 @@
     "href": "index.html#plumber-1",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "plumber",
-    "text": "plumber\n ::: {.notes} La API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub. :::"
+    "text": "plumber\n\n\nLa API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub."
   },
   {
     "objectID": "index.html#papelitos",
@@ -81,21 +81,21 @@
     "href": "index.html#cómo-puedes-jugar",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "cómo puedes jugar",
-    "text": "cómo puedes jugar"
+    "text": "cómo puedes jugar\n  \n\nSi entras con el móvil, verás una caja con instrucciones. Ahí está el detalle del juego, que ahora no me da tiempo a contar. Pero como ya he dicho, es el que mucha gente llama personajes. Se escriben nombres de personajes en papelitos, y luego hay que adivinar lo que pone en el papel por equipos, haciendo mimíca y cosas de esas."
   },
   {
     "objectID": "index.html#cómo-puedes-jugar-1",
     "href": "index.html#cómo-puedes-jugar-1",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "cómo puedes jugar",
-    "text": "cómo puedes jugar"
+    "text": "cómo puedes jugar\n\n \n\nPara jugar, cada jugador introduce el nombre de un personaje, o cualquier palabra de una temática acordada y pulsa en el botón. Esto va creando un vector con todos los nombres."
   },
   {
     "objectID": "index.html#pues-al-lío",
     "href": "index.html#pues-al-lío",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "pues al lío",
-    "text": "pues al lío"
+    "text": "pues al lío\n \n\nDurante la ronda, la persona a la que le toque explicar el papelito, va sacando nombres del vector, pulsando el botón de “sacar papelito”. Una cosa pendiente que me gustaría añadir, y no sé cómo hacer, es poner un temporizador, para no depender de otro móvil para hacer eso."
   },
   {
     "objectID": "about.html",
@@ -110,5 +110,12 @@
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "2 shiny apps, para el ocio y el negocio",
     "text": "2 shiny apps, para el ocio y el negocio\n\nUn shiny como prototipo de app para reviews de casas de alquiler\nUn shiny para un juego por equipos desde el móvil\n\n\nDos shiny apps: una es ocio; la otra es una idea de negocio. La primera es un prototipo de una herramienta que me gustaría tener. La segunda es un juego por equipos al que se pueda acceder desde el móvil."
+  },
+  {
+    "objectID": "index.html#leaflet-background-imageimgcaseros-general.png-background-size80",
+    "href": "index.html#leaflet-background-imageimgcaseros-general.png-background-size80",
+    "title": "2 shiny apps, para el ocio y el negocio",
+    "section": "leaflet {background-image=“img/caseros-general.png”, background-size=“80%”}",
+    "text": "leaflet {background-image=“img/caseros-general.png”, background-size=“80%”}\n\nLo primero que te encuentras al abrir el Shiny es un mapa de leaflet. Leaflet me gusta un montón porque me permite hacer mapas interactivos muy chulos sin tener ni idea de javascript. Este mapa muestra las direcciones en las que hay valoraciones ya hechas. Un comentario: estos no están anonimizados ni simulados, sino inventados. Todo lo que veis aquí es mentira. Solo me interesa el funcionamiento: el prototipo aún no está operativo."
   }
 ]

@@ -27,7 +27,8 @@ Se juntan dos cosas: vivo de alquiler en Madrid y me gusta mucho Shiny. La situa
 No sé desarrollar una herramienta así y me gustaría que alguien lo hiciera. Así que, para mostrar cómo me gustaría que fuera la herramienta, he hecho una propuesta en Shiny. 
 :::
 
-## leaflet {background-image="img/caseros-general.png"}
+## leaflet {background-image="img/caseros-general.png" background-size="90%"}
+
 ::: {.notes}
 Lo primero que te encuentras al abrir el Shiny es un mapa de leaflet. Leaflet me gusta un montón porque me permite hacer mapas interactivos muy chulos sin tener ni idea de javascript. Este mapa muestra las direcciones en las que hay valoraciones ya hechas. Un comentario: estos no están anonimizados ni simulados, sino inventados. Todo lo que veis aquí es mentira. Solo me interesa el funcionamiento: el prototipo aún no está operativo.
 :::
@@ -45,20 +46,20 @@ geocode(new_address)
 Para añadir valoraciones hace falta iniciar sesión. Eso de iniciar sesión, ahora mismo, consiste en poner en un cajetín de Shiny una API key de los servicios de Google Maps. Luego el paquete ggmap, a partir de una dirección, devuelve las coordenadas. Y uso esas coordenadas para pintar en leaflet los puntos.
 :::
 
-## ggmap {background-image="img/caseros-input.png"}
+## ggmap {background-image="img/caseros-input.png" background-size="90%"}
 
 ::: {.notes}
 El usuario introduce la dirección de la casa, la valoración y un comentario. Y su API KEY. Y cuando hace click en añadir valoración...
 :::
 
-## ggmap {background-image="img/caseros-new-marker.png"}
+## ggmap {background-image="img/caseros-new-marker.png" background-size="90%"}
 
 ::: {.notes}
 Pues eso, se añade una valoración. Es decir, un punto nuevo en el mapa con la valoración del usuario.
 Esto por detrás, tras la llamada a ggmap, actualiza un fichero. El Shiny comprueba cada 2 segundos si ese fichero ha sufrido cambios, con reactiveFileReader. Si es así, lee el fichero y actualiza el mapa. 
 :::
 
-## leaflet {background-image="img/caseros-ejemplo-review.png"}
+## leaflet {background-image="img/caseros-ejemplo-review.png" background-size="90%"}
 
 ::: {.notes}
 Para consultar información no hace falta iniciar sesión. Uno puede hacer click en un marcador y ve la info.
@@ -73,7 +74,7 @@ Eso no solo es útil para mostrar la información del marcador con Shiny, sino q
 fs::dir_tree("~/Projects/caseros")
 ```
 
-:::{.notes}
+::: {.notes}
 Desde hace tiempo monto mis Shinys como paquetes de R. Empecé sin golem, a pelo, pero ya me estoy dejando llevar totalmente por esta herramienta. Al final tienes todo tu Shiny como funciones. El server, el UI, los módulos Shiny, todo son funciones y viven en la carpeta R de tu Shiny. Los desarrolladores argumentan que simplifica el despliegue de Shiny. Porque la instalación de dependencias se hace como en cualquier librería. Pero va más allá.
 :::
 
@@ -105,6 +106,8 @@ Shiny es muy mono y muy visual. Pero a veces lo práctico tiene que ser program�
 ## plumber 
 
 ![](img/caseros-api.png)
+
+
 ::: {.notes}
 La API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub.
 :::
@@ -124,18 +127,30 @@ Tanto este shiny como el otro viven en una cuenta gratuita de ShinyApps así que
 ![](img/papelitos-instrus2.png){.absolute left=350 height="500"}
 ![](img/papelitos-instrus3.png){.absolute right=50 height="500"}
 
+::: {.notes}
+Si entras con el móvil, verás una caja con instrucciones. Ahí está el detalle del juego, que ahora no me da tiempo a contar. Pero como ya he dicho, es el que mucha gente llama personajes. Se escriben nombres de personajes en papelitos, y luego hay que adivinar lo que pone en el papel por equipos, haciendo mimíca y cosas de esas.
+:::
+
 ## cómo puedes jugar
 
+
 ![](img/papelitos-input0.png){.absolute left=50 height="500"}
+
 ![](img/papelitos-input1.png){.absolute left=350 height="500"}
 ![](img/papelitos-input2.png){.absolute right=50 height="500"}
+
+::: {.notes}
+Para jugar, cada jugador introduce el nombre de un personaje, o cualquier palabra de una temática acordada y pulsa en el botón. Esto va creando un vector con todos los nombres. 
+:::
 
 ## pues al lío
 
 ![](img/papelitos-input3.png){.absolute left=150 height="500"}
 ![](img/papelitos-input4.png){.absolute right=150 height="500"}
 
-
+::: {.notes}
+Durante la ronda, la persona a la que le toque explicar el papelito, va sacando nombres del vector, pulsando el botón de "sacar papelito". Una cosa pendiente que me gustaría añadir, y no sé cómo hacer, es poner un temporizador, para no depender de otro móvil para hacer eso.
+:::
 
 
 
