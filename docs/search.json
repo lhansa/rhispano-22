@@ -11,70 +11,70 @@
     "href": "index.html#caseros",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "caseros",
-    "text": "caseros\nhttps://lhansa.shinyapps.io/caseros\n\nPrototipo. Pruebas de Shiny - Aplicar luego en otros proyectos."
+    "text": "caseros\nhttps://lhansa.shinyapps.io/caseros\n\nSe juntan dos cosas: vivo de alquiler en Madrid y me gusta mucho Shiny. La situación del alquiler es desesperante. Pero no tengo nada a mi alcance para hacer que los precios bajen. ¿Qué me gustaría en su lugar? Que otros inquilinos pudieran aprovechar mis experiencias en casas en las que ya he estado. Puedo valorar casas en las que he estado, a modo Google Maps o Tripadvisor, comparto esas valoraciones y así pueden apoyarse en ellas para negociar o incluso para buscarse otra cosa. Y otras personas podrían compartir su experiencia. No sé desarrollar una herramienta así y me gustaría que alguien lo hiciera. Así que, para mostrar cómo me gustaría que fuera la herramienta, he hecho una propuesta en Shiny."
   },
   {
     "objectID": "index.html#leaflet",
     "href": "index.html#leaflet",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "leaflet",
-    "text": "leaflet"
+    "text": "leaflet\n\nLo primero que te encuentras al abrir el Shiny es un mapa de leaflet. Leaflet me gusta un montón porque me permite hacer mapas interactivos muy chulos sin tener ni idea de javascript. Este mapa muestra las direcciones en las que hay valoraciones ya hechas. Un comentario: estos no están anonimizados ni simulados, sino inventados. Todo lo que veis aquí es mentira. Solo me interesa el funcionamiento: el prototipo aún no está operativo."
   },
   {
     "objectID": "index.html#ggmap",
     "href": "index.html#ggmap",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "ggmap",
-    "text": "ggmap\n\nregister_google(key = google_key)\ngeocode(new_address)"
+    "text": "ggmap\n\nregister_google(key = google_key)\ngeocode(new_address)\n\n\nPara añadir valoraciones hace falta iniciar sesión. Eso de iniciar sesión, ahora mismo, consiste en poner en un cajetín de Shiny una API key de los servicios de Google Maps. Luego el paquete ggmap, a partir de una dirección, devuelve las coordenadas. Y uso esas coordenadas para pintar en leaflet los puntos."
   },
   {
     "objectID": "index.html#ggmap-1",
     "href": "index.html#ggmap-1",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "ggmap",
-    "text": "ggmap"
+    "text": "ggmap\n\nEl usuario introduce la dirección de la casa, la valoración y un comentario. Y su API KEY. Y cuando hace click en añadir valoración…"
   },
   {
     "objectID": "index.html#ggmap-2",
     "href": "index.html#ggmap-2",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "ggmap",
-    "text": "ggmap"
+    "text": "ggmap\n\nPues eso, se añade una valoración. Es decir, un punto nuevo en el mapa con la valoración del usuario. Esto por detrás, tras la llamada a ggmap, actualiza un fichero. El Shiny comprueba cada 2 segundos si ese fichero ha sufrido cambios, con reactiveFileReader. Si es así, lee el fichero y actualiza el mapa."
   },
   {
     "objectID": "index.html#leaflet-1",
     "href": "index.html#leaflet-1",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "leaflet",
-    "text": "leaflet"
+    "text": "leaflet\n\nPara consultar información no hace falta iniciar sesión. Uno puede hacer click en un marcador y ve la info. Con leaflet puedes hacer click en estos marcadores y te sale un pop-up con la información que contiene. Pero yo quería tener control desde Shiny, porque así tenía más margen para mostrar la información de un punto. Lo bueno es que leaflet y shiny se entienden muy bien y puedes vincularlos de manera que Shiny sabe dónde está haciendo click el usuario dentro del mapa. Eso no solo es útil para mostrar la información del marcador con Shiny, sino que podría guardar un registro de clicks que hacen los usuarios."
   },
   {
     "objectID": "index.html#golem",
     "href": "index.html#golem",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "golem",
-    "text": "golem\n\n\n~/Projects/caseros\n├── DESCRIPTION\n├── LICENSE\n├── LICENSE.md\n├── NAMESPACE\n├── R\n│   ├── _disable_autoload.R\n│   ├── app_config.R\n│   ├── app_server.R\n│   ├── app_ui.R\n│   ├── get_reviews_over.R\n│   ├── mod_input.R\n│   ├── mod_show_map.R\n│   ├── mod_show_marker.R\n│   ├── run_app.R\n│   └── update_with_new_address.R\n├── README.Rmd\n├── README.md\n├── app.R\n├── caseros.Rproj\n├── dev\n│   ├── 01_start.R\n│   ├── 02_dev.R\n│   ├── 03_deploy.R\n│   └── run_dev.R\n├── inst\n│   ├── WORDLIST\n│   ├── app\n│   │   └── www\n│   │       └── favicon.ico\n│   ├── cruce-poligonos.R\n│   ├── extdata\n│   │   └── locs.rds\n│   ├── golem-config.yml\n│   ├── plumber\n│   │   └── api1\n│   │       └── plumber.R\n│   └── update-locs-manually.R\n├── man\n│   ├── get_reviews_over.Rd\n│   ├── inputReviewUI.Rd\n│   ├── run_app.Rd\n│   ├── showMapUI.Rd\n│   ├── showMarkerUI.Rd\n│   └── update_with_new_address.Rd\n├── rsconnect\n│   └── shinyapps.io\n│       └── lhansa\n│           └── caseros.dcf\n└── tests\n    ├── spelling.R\n    ├── testthat\n    │   └── test-golem-recommended.R\n    └── testthat.R"
+    "text": "golem\n\n\n~/Projects/caseros\n├── DESCRIPTION\n├── LICENSE\n├── LICENSE.md\n├── NAMESPACE\n├── R\n│   ├── _disable_autoload.R\n│   ├── app_config.R\n│   ├── app_server.R\n│   ├── app_ui.R\n│   ├── get_reviews_over.R\n│   ├── mod_input.R\n│   ├── mod_show_map.R\n│   ├── mod_show_marker.R\n│   ├── run_app.R\n│   └── update_with_new_address.R\n├── README.Rmd\n├── README.md\n├── app.R\n├── caseros.Rproj\n├── dev\n│   ├── 01_start.R\n│   ├── 02_dev.R\n│   ├── 03_deploy.R\n│   └── run_dev.R\n├── inst\n│   ├── WORDLIST\n│   ├── app\n│   │   └── www\n│   │       └── favicon.ico\n│   ├── cruce-poligonos.R\n│   ├── extdata\n│   │   └── locs.rds\n│   ├── golem-config.yml\n│   ├── plumber\n│   │   └── api1\n│   │       └── plumber.R\n│   └── update-locs-manually.R\n├── man\n│   ├── get_reviews_over.Rd\n│   ├── inputReviewUI.Rd\n│   ├── run_app.Rd\n│   ├── showMapUI.Rd\n│   ├── showMarkerUI.Rd\n│   └── update_with_new_address.Rd\n├── rsconnect\n│   └── shinyapps.io\n│       └── lhansa\n│           └── caseros.dcf\n└── tests\n    ├── spelling.R\n    ├── testthat\n    │   └── test-golem-recommended.R\n    └── testthat.R\n\n\n\nDesde hace tiempo monto mis Shinys como paquetes de R. Empecé sin golem, a pelo, pero ya me estoy dejando llevar totalmente por esta herramienta. Al final tienes todo tu Shiny como funciones. El server, el UI, los módulos Shiny, todo son funciones y viven en la carpeta R de tu Shiny. Los desarrolladores argumentan que simplifica el despliegue de Shiny. Porque la instalación de dependencias se hace como en cualquier librería. Pero va más allá."
   },
   {
     "objectID": "index.html#plumber",
     "href": "index.html#plumber",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "plumber",
-    "text": "plumber\n\n# plumber.R\n\n#* Return data frame with info\n#* @param mark Lower bound mark\n#* @serializer unboxedJSON\n#* @get /echo\nfunction(mark=0) {\n  jsonlite::toJSON(\n    caseros::get_reviews_over(mark),\n    auto_unbox =TRUE\n  )\n}"
+    "text": "plumber\n\n# plumber.R\n\n#* Return data frame with info\n#* @param mark Lower bound mark\n#* @serializer unboxedJSON\n#* @get /echo\nfunction(mark=0) {\n  jsonlite::toJSON(\n    caseros::get_reviews_over(mark),\n    auto_unbox =TRUE\n  )\n}\n\n\nShiny es muy mono y muy visual. Pero a veces lo práctico tiene que ser programático. Para eso, es mejor una API que un Shiny. No sé nada de APIs pero la librería plumber me pone muy fácil el montar una. Lo que necesito son los códigos que va a ejecutar la API. Pero es que esos códigos son justo las funciones del Shiny, que las tengo todas en la librería. Así que montar la API, apoyándome en plumber, consiste solamente en hacer llamadas a funciones de mi librería."
   },
   {
     "objectID": "index.html#plumber-1",
     "href": "index.html#plumber-1",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "plumber",
-    "text": "plumber"
+    "text": "plumber\n ::: {.notes} La API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub. :::"
   },
   {
     "objectID": "index.html#papelitos",
     "href": "index.html#papelitos",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "papelitos",
-    "text": "papelitos\nhttps://lhansa.shinyapps.io/papelitos/"
+    "text": "papelitos\nhttps://lhansa.shinyapps.io/papelitos/\n\nNo me da tiempo a hablar de mi segundo Shiny. Solo diré que es un juego por equipos, pensado para acceder desde el móvil y tiene instrucciones cuando entráis. Tanto este shiny como el otro viven en una cuenta gratuita de ShinyApps así que el acceso está bastante limitado. Pero todos los códigos están en GitHub."
   },
   {
     "objectID": "index.html#cómo-puedes-jugar",
@@ -109,6 +109,6 @@
     "href": "index.html#shiny-apps-para-el-ocio-y-el-negocio",
     "title": "2 shiny apps, para el ocio y el negocio",
     "section": "2 shiny apps, para el ocio y el negocio",
-    "text": "2 shiny apps, para el ocio y el negocio\n\nUn shiny como prototipo de app para reviews de casas de alquiler\nUn shiny para un juego por equipos desde el móvil"
+    "text": "2 shiny apps, para el ocio y el negocio\n\nUn shiny como prototipo de app para reviews de casas de alquiler\nUn shiny para un juego por equipos desde el móvil\n\n\nDos shiny apps: una es ocio; la otra es una idea de negocio. La primera es un prototipo de una herramienta que me gustaría tener. La segunda es un juego por equipos al que se pueda acceder desde el móvil."
   }
 ]
