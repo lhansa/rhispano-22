@@ -407,7 +407,7 @@ Leonardo Hansa
 <li>Un shiny para un juego por equipos desde el móvil</li>
 </ol>
 <aside class="notes">
-<p>Dos shiny apps: una es ocio; la otra es una idea de negocio. La primera es un prototipo de una herramienta que me gustaría tener. La segunda es un juego por equipos al que se pueda acceder desde el móvil.</p>
+<p>Dos shiny apps ** una es ocio ** la otra es una idea de negocio ** La primera: prototipo de una herramienta que me gustaría tener ** La segunda: juego por equipos al que se pueda acceder desde el móvil</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -424,7 +424,7 @@ Leonardo Hansa
 <h2>caseros</h2>
 <p><a href="https://lhansa.shinyapps.io/caseros">https://lhansa.shinyapps.io/caseros</a></p>
 <aside class="notes">
-<p>Se juntan dos cosas: vivo de alquiler en Madrid y me gusta mucho Shiny. La situación del alquiler es desesperante. Pero no tengo nada a mi alcance para hacer que los precios bajen. ¿Qué me gustaría en su lugar? Que otros inquilinos pudieran aprovechar mis experiencias en casas en las que ya he estado. Puedo valorar casas en las que he estado, a modo Google Maps o Tripadvisor, comparto esas valoraciones y así pueden apoyarse en ellas para negociar o incluso para buscarse otra cosa. Y otras personas podrían compartir su experiencia. No sé desarrollar una herramienta así y me gustaría que alguien lo hiciera. Así que, para mostrar cómo me gustaría que fuera la herramienta, he hecho una propuesta en Shiny.</p>
+<p>¿Quién vive de alquiler? ¿A quién le gusta Shiny? ** Vivo de alquiler. Situación difícil. ¿Qué se puede hacer? ** Compartir experiencias pasadas ** Goole Maps y Tripadvisor ** Valoración de casas ** Ayuda para tomar decisión ** No sé desarrollar una herramienta así ** Muestro qué me gustaría tener con Shiny</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -440,7 +440,7 @@ Leonardo Hansa
 <section id="leaflet" class="slide level2" data-background-image="img/caseros-general.png" data-background-size="90%">
 <h2>leaflet</h2>
 <aside class="notes">
-<p>Lo primero que te encuentras al abrir el Shiny es un mapa de leaflet. Leaflet me gusta un montón porque me permite hacer mapas interactivos muy chulos sin tener ni idea de javascript. Este mapa muestra las direcciones en las que hay valoraciones ya hechas. Un comentario: estos no están anonimizados ni simulados, sino inventados. Todo lo que veis aquí es mentira. Solo me interesa el funcionamiento: el prototipo aún no está operativo.</p>
+<p>1 leaflet ** me gusta, hago mapas resultones sin saber javascript ** Muestro direcciones con valoraciones ya hechas ** datos inventados ** Solo muestro funcionamiento</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -460,7 +460,7 @@ Leonardo Hansa
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">geocode</span>(new_address)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <aside class="notes">
-<p>Para añadir valoraciones hace falta iniciar sesión. Eso de iniciar sesión, ahora mismo, consiste en poner en un cajetín de Shiny una API key de los servicios de Google Maps. Luego el paquete ggmap, a partir de una dirección, devuelve las coordenadas. Y uso esas coordenadas para pintar en leaflet los puntos.</p>
+<p>iniciar sesió ** API key servicios Google Map ** ggmap, dirección, coordenadas ** con leaflet, pinto puntos</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -476,7 +476,7 @@ Leonardo Hansa
 <section id="ggmap-1" class="slide level2" data-background-image="img/caseros-input.png" data-background-size="90%">
 <h2>ggmap</h2>
 <aside class="notes">
-<p>El usuario introduce la dirección de la casa, la valoración y un comentario. Y su API KEY. Y cuando hace click en añadir valoración…</p>
+<p>introduce dirección, la valoración y un comentario ** API KEY ** haz click</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -492,7 +492,7 @@ Leonardo Hansa
 <section id="ggmap-2" class="slide level2" data-background-image="img/caseros-new-marker.png" data-background-size="90%">
 <h2>ggmap</h2>
 <aside class="notes">
-<p>Pues eso, se añade una valoración. Es decir, un punto nuevo en el mapa con la valoración del usuario. Esto por detrás, tras la llamada a ggmap, actualiza un fichero. El Shiny comprueba cada 2 segundos si ese fichero ha sufrido cambios, con reactiveFileReader. Si es así, lee el fichero y actualiza el mapa.</p>
+<p>se añade punto ** fichero, reaciveFileReader ** si cambia, actualizo.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -508,7 +508,7 @@ Leonardo Hansa
 <section id="leaflet-1" class="slide level2" data-background-image="img/caseros-ejemplo-review.png" data-background-size="90%">
 <h2>leaflet</h2>
 <aside class="notes">
-<p>Para consultar información no hace falta iniciar sesión. Uno puede hacer click en un marcador y ve la info. Con leaflet puedes hacer click en estos marcadores y te sale un pop-up con la información que contiene. Pero yo quería tener control desde Shiny, porque así tenía más margen para mostrar la información de un punto. Lo bueno es que leaflet y shiny se entienden muy bien y puedes vincularlos de manera que Shiny sabe dónde está haciendo click el usuario dentro del mapa. Eso no solo es útil para mostrar la información del marcador con Shiny, sino que podría guardar un registro de clicks que hacen los usuarios.</p>
+<p>consultar información, click - control con shiny, más control * formato, incluso registro de comportamiento</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -555,7 +555,6 @@ Leonardo Hansa
 │   ├── app
 │   │   └── www
 │   │       └── favicon.ico
-│   ├── cruce-poligonos.R
 │   ├── extdata
 │   │   └── locs.rds
 │   ├── golem-config.yml
@@ -582,7 +581,7 @@ Leonardo Hansa
 </div>
 </div>
 <aside class="notes">
-<p>Desde hace tiempo monto mis Shinys como paquetes de R. Empecé sin golem, a pelo, pero ya me estoy dejando llevar totalmente por esta herramienta. Al final tienes todo tu Shiny como funciones. El server, el UI, los módulos Shiny, todo son funciones y viven en la carpeta R de tu Shiny. Los desarrolladores argumentan que simplifica el despliegue de Shiny. Porque la instalación de dependencias se hace como en cualquier librería. Pero va más allá.</p>
+<p>paquetes R - Shiny ** librería golem ** todo son funciones, incluso los módulos ** fácil para instalar y despliegue ** Más allá</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -612,7 +611,7 @@ Leonardo Hansa
 <span id="cb3-12"><a href="#cb3-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <aside class="notes">
-<p>Shiny es muy mono y muy visual. Pero a veces lo práctico tiene que ser programático. Para eso, es mejor una API que un Shiny. No sé nada de APIs pero la librería plumber me pone muy fácil el montar una. Lo que necesito son los códigos que va a ejecutar la API. Pero es que esos códigos son justo las funciones del Shiny, que las tengo todas en la librería. Así que montar la API, apoyándome en plumber, consiste solamente en hacer llamadas a funciones de mi librería.</p>
+<p>shiny visual ** más práctico API ** fácil con plumber ** Los códigos son los de tu librería</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -629,7 +628,7 @@ Leonardo Hansa
 <h2>plumber</h2>
 
 <img data-src="img/caseros-api.png" class="r-stretch"><aside class="notes">
-<p>La API no la he hecho pública porque solo me he puesto a hacer minipruebas. Pero está el código en GitHub.</p>
+<p>API no pública ** Disponible código</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -646,7 +645,7 @@ Leonardo Hansa
 <h2>papelitos</h2>
 <p><a href="https://lhansa.shinyapps.io/papelitos">https://lhansa.shinyapps.io/papelitos/</a></p>
 <aside class="notes">
-<p>No me da tiempo a hablar de mi segundo Shiny. Solo diré que es un juego por equipos, pensado para acceder desde el móvil y tiene instrucciones cuando entráis. Tanto este shiny como el otro viven en una cuenta gratuita de ShinyApps así que el acceso está bastante limitado. Pero todos los códigos están en GitHub.</p>
+<p>juego por equipos ** cuenta gratis shinyapps</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -717,7 +716,7 @@ Leonardo Hansa
 <p>leonardohansa.com</p>
 </div>
 <aside class="notes">
-<p>Y para terminar, un favor. Tengo una newsletter y si te suscribes recibirás un correo sobre la relación que tiene programar y montar muebles de Ikea. Responde a ese correo y cuéntame si has usado estas herramientas y qué te han parecido. Será un placer leerte. Muchas gracias.</p>
+<p>Tengo newsletter - suscríbete y estamos en contacto.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
